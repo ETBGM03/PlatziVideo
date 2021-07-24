@@ -13,6 +13,16 @@ body {
   background-color: #AB88FF;
 }
 
+/*De esta manera se hace la herencia en sass para no repetir code */
+.flex, .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header {
   background-color: #21C08B;
   height: 8rem;
@@ -34,12 +44,6 @@ body {
 .login {
   background: -webkit-gradient(linear, left top, left bottom, from(#21C08B), to(#AB88FF));
   background: linear-gradient(#21C08B, #AB88FF);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -161,7 +165,7 @@ h2 {
 }
 
 .login__container--register {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .login__container--register a {
